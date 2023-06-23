@@ -1,63 +1,282 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     line-height: 0;
     background-color: #3a3a3a;
-    padding: 0px 300px ;
+    padding: 0px 300px;
     height: 40px;
     font-size: 12px;
     font-family: 'SF Pro Display', sans-serif;
-    
+
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 400;
-    
+
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-.container{
+
+.container {
     background-color: #eaebec;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding-top: 8px;
+    padding-bottom: 15px;
 }
-.container-fluid{
+
+.container-fluid {
     width: 61%;
-    height: 90%;
+    height: 100%;
     background-color: #fff;
     margin: 0 auto;
+    padding-bottom: 20px;
     border-radius: 3px;
     box-shadow: 0px 0px 8px 0.1px #54545469;
 }
-.spotlight{
+
+.spotlight {
     padding: 100px 45px 0px 45px;
+    margin-bottom: 70px;
 
 }
-.spotlight h1{
+
+.spotlight h1 {
     font-size: 48px;
     font-family: 'SF Pro Display', sans-serif;
     text-align: center;
     font-weight: 600;
-    
+
 }
-.spotlight p{
-    color: #333;
+
+.spotlight p {
+    color: #494949;
     margin: 20px 18px;
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
-    font-family:  "Lucida Grande",sans-serif;
+    font-family: "Lucida Grande", sans-serif;
 }
-.spotlight a{
+
+.spotlight a {
     text-decoration: none;
     color: #08c;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    border: 0.01px solid #d9dada;
+}
+
+.tribute-board {
+    font-family: 'Helvetica Neue', Helvetica, 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif;
+    text-align: justify;
+    width: 59%;
+    margin: 0px auto;
+    padding: 18px 20px;
+    line-height: 1.5;
+
+}
+
+.tribute {
+
+    margin: 70px auto;
+}
+
+.tribute-heading {
+    font-size: 14px;
+
+}
+
+.tribute-text {
+    color: #494949;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+
+}
+
+.tribute-author {
+
+    color: #8a8a8a;
+    margin-top: 7px;
+}
+
+.tomb-stone {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #1f1f1f;
+}
+
+.name-and-date {
+    margin-top: 5px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+
+}
+
+.name-and-date h1 {
+    font-size: 33px;
+    font-weight: 600;
+
+
+
+}
+
+.name-and-date h3 {
+    font-size: 18px;
+}
+
+.remark p {
+    font-weight: bold;
+}
+
+
+@media (max-width: 640px) {
+    header {
+        padding: 0px 5px;
+        height: 40px;
+        font-size: 6px;
+        font-family: 'SF Pro Display', sans-serif;
+    
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        letter-spacing: 0.4px;
+        
+    
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    
+    .container {
+        background-color: #eaebec;
+        width: 100%;
+        height: 100%;
+        padding-top: 8px;
+        padding-bottom: 15px;
+    }
+    
+    .container-fluid {
+        width: 80%;
+        height: 90%;
+        background-color: #fff;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        border-radius: 3px;
+        box-shadow: 0px 0px 8px 0.1px #54545469;
+    }
+    
+    .spotlight {
+        padding: 50px 15px 0px 15px;
+        margin-bottom: 40px;
+    
+    }
+    
+    .spotlight h1 {
+        font-size: 38px;
+        font-family: 'SF Pro Display', sans-serif;
+        text-align: center;
+        font-weight: 600;
+    
+    }
+    
+    .spotlight p {
+        margin: 10px auto;
+        font-size: 9px;
+        line-height: 1.5;
+        text-align: center;
+        font-family: "Lucida Grande", sans-serif;
+    }
+        
+    hr {
+        width: 85%;
+        margin: 0 auto;
+        border: 0.1px solid #d9dada;
+    }
+    
+    .tribute-board {
+        font-family: 'Helvetica Neue', Helvetica, 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif;
+        text-align: justify;
+        width: 90%;
+        margin: 0px auto;
+        padding: 18px 20px;
+        line-height: 1.5;
+    
+    }
+    
+    .tribute {
+    
+        margin: 30px auto;
+    }
+    
+    .tribute-heading {
+        font-size: 10px;
+    
+    }
+    
+    .tribute-text {
+        color: #494949;
+        font-size: 8px;
+        letter-spacing: 0.3px;
+    
+    }
+    
+    .tribute-author {
+        font-size: 7px;
+        color: #8a8a8a;
+        margin-top: 7px;
+    }
+    
+    .tomb-stone {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: "Helvetica Neue", sans-serif;
+        color: #1f1f1f;
+    }
+    
+    .name-and-date {
+        margin-top: 5px;
+        line-height: 1.5;
+        margin-bottom: 3px;
+    
+    }
+    
+    .name-and-date h1 {
+        font-size: 23px;
+        font-weight: 400;
+    
+    
+    
+    }
+    
+    .name-and-date h3 {
+        font-size: 10px;
+        font-weight: 400;
+    }
+    
+    .remark p {
+        font-size: 8px;
+        font-weight: lighter;
+        font-family: "Lucida Grande", sans-serif;
+    }
 }
