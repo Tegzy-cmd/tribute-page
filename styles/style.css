@@ -146,6 +146,10 @@ hr {
 
 @media (max-width: 640px) {
     header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1;
         padding: 0px 5px;
         height: 40px;
         font-size: 6px;
@@ -171,7 +175,8 @@ hr {
         background-color: #eaebec;
         width: 100%;
         height: 100%;
-        padding-top: 8px;
+        margin-top: 40px;
+        padding-top: 5px;
         padding-bottom: 15px;
     }
     
@@ -186,7 +191,7 @@ hr {
     }
     
     .spotlight {
-        padding: 50px 15px 0px 15px;
+        padding: 40px 15px 0px 15px;
         margin-bottom: 40px;
     
     }
